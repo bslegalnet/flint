@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #1C1208;
+  --color-gold: #D8A93B;
+  --color-cream: #F5EDD8;
+}
+
+html,
+body {
+  background: #F5EDD8;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #D8A93B;
+  color: #1C1208;
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.18em] text-gold;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center bg-gold-gradient text-white font-semibold rounded-full transition-all duration-150 hover:brightness-105 active:scale-[0.99];
+    animation: glow 2s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(215, 168, 59, 0.5), 0 0 40px rgba(215, 168, 59, 0.3);
+  }
+  
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(215, 168, 59, 0.5), 0 0 40px rgba(215, 168, 59, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(215, 168, 59, 0.8), 0 0 60px rgba(215, 168, 59, 0.5);
+    }
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center bg-[#FDFAF5] text-navy/80 font-semibold rounded-full border border-navy/15 hover:border-navy/30 transition-colors duration-200;
+  }
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center bg-transparent text-cream font-semibold rounded-full border border-gold/50 hover:border-gold transition-colors duration-200;
+  }
+  .section {
+    @apply px-6 py-20 md:py-[120px];
+  }
+  .container-tight {
+    @apply mx-auto w-full max-w-6xl;
+  }
+}
