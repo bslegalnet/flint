@@ -35,7 +35,7 @@ export default function Logo({
     <a
       href="/"
       className={`flex items-center gap-3 ${className}`}
-      aria-label="Atlas Financial — home"
+      aria-label="Flint Financial Group — home"
     >
       {showCrest && <AtlasCrest size={crestSize} variant={crestVariant} />}
       {stacked ? (
@@ -43,13 +43,13 @@ export default function Logo({
           <span
             className={`font-cinzel font-bold tracking-[0.12em] ${wordSize} ${textColor}`}
           >
-            ATLAS
+            FLINT
           </span>
           <span
             className={`mt-1.5 flex items-center gap-2 ${subSize} ${textColor} font-cinzel font-medium tracking-[0.32em]`}
           >
             <span className="h-px w-4 bg-current opacity-60" />
-            FINANCIAL
+            FINANCIAL GROUP
             <span className="h-px w-4 bg-current opacity-60" />
           </span>
         </div>
@@ -58,12 +58,12 @@ export default function Logo({
           <span
             className={`font-cinzel font-bold tracking-[0.1em] ${wordSize} ${textColor}`}
           >
-            ATLAS
+            FLINT
           </span>
           <span
             className={`mt-1 ${subSize} ${textColor} font-cinzel font-medium tracking-[0.32em]`}
           >
-            FINANCIAL
+            FINANCIAL GROUP
           </span>
         </div>
       )}

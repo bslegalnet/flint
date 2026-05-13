@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 const NAV = [
   { label: "About", href: "#about" },
-  { label: "Why Atlas", href: "#why" },
+  { label: "Why Flint", href: "#why" },
 ];
 
 export default function Header() {
@@ -28,7 +28,7 @@ export default function Header() {
       }`}
     >
       <div className="container-tight flex items-center justify-center md:justify-between px-6 h-20 md:h-24">
-        <Logo variant="gold" size="md" showCrest={false} />
+        <Logo variant="gold" size="md" showCrest={false} stacked={true} />
 
         <nav className="hidden md:flex items-center gap-8">
           {NAV.map((n) => (

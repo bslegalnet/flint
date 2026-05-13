@@ -18,13 +18,21 @@ export default function StickyApply() {
         show ? "translate-y-0 opacity-100" : "translate-y-full opacity-0 pointer-events-none"
       }`}
     >
-      <a
-        href="/apply"
-        className="btn-gold w-full h-14 text-base shadow-[0_8px_24px_-6px_rgba(10,22,40,0.35)]"
-      >
-        Apply Now
-        <span aria-hidden className="ml-2">→</span>
-      </a>
+      <div className="flex gap-3">
+        <a
+          href="/contact"
+          className="btn-outline h-14 px-5 text-base border-navy/20 shrink-0"
+        >
+          Contact
+        </a>
+        <a
+          href="/apply"
+          className="btn-gold flex-1 h-14 text-base shadow-[0_8px_24px_-6px_rgba(10,22,40,0.35)]"
+        >
+          Apply Now
+          <span aria-hidden className="ml-2">→</span>
+        </a>
+      </div>
     </div>
   );
 }

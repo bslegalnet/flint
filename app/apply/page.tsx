@@ -13,6 +13,17 @@ const TIMEZONES = [
   "Hawaii (HST)",
 ];
 
+const STATES = [
+  "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+  "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+  "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+  "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+  "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+  "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+  "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+  "Wisconsin", "Wyoming"
+];
+
 const STATUSES = [
   "Currently Employed",
   "Unemployed",
@@ -60,6 +71,8 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default function ApplyPage() {
   const [citizen, setCitizen] = useState<"yes" | "no" | "">("");
+  const [workPermit, setWorkPermit] = useState<"yes" | "no" | "">("");
+  const [licensed, setLicensed] = useState<"yes" | "no" | "">("");
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
@@ -83,7 +96,7 @@ export default function ApplyPage() {
             </div>
             <h1 className="font-sans font-bold text-navy text-[32px] tracking-[-0.01em]">Application Received</h1>
             <p className="mt-3 text-navy/65 text-[17px] leading-relaxed">
-              Thanks for applying to Atlas Financial. We review every application personally and will be in touch within 24 hours.
+              Thanks for applying to Flint Financial Group. Our team reviews every application personally and will be in touch within 24 hours.
             </p>
             <a href="/" className="btn-gold inline-flex mt-8 h-12 px-8 text-[15px]">Back to Home</a>
           </div>
@@ -106,10 +119,10 @@ export default function ApplyPage() {
           <div className="mb-10">
             <p className="eyebrow">Join the Team</p>
             <h1 className="mt-3 font-sans font-bold text-navy text-[36px] md:text-[48px] leading-[1.06] tracking-[-0.01em]">
-              Apply to Atlas Financial
+              Apply to Flint Financial Group
             </h1>
             <p className="mt-3 text-[17px] text-navy/65 leading-relaxed max-w-lg">
-              Start your journey with us. Fill out the application below and we&apos;ll be in touch soon.
+              Start your journey with an established agency. Complete the application below and our team will be in touch within 24 hours.
             </p>
           </div>
 
@@ -136,8 +149,14 @@ export default function ApplyPage() {
                   <Input type="tel" placeholder="(555) 000-0000" required />
                 </div>
                 <div className="sm:col-span-2">
-                  <Label required>Date of Birth</Label>
-                  <Input type="text" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}" required />
+                  <Label required>State</Label>
+                  <div className="relative">
+                    <Select defaultValue="" required>
+                      <option value="" disabled>Select state</option>
+                      {STATES.map((state) => <option key={state}>{state}</option>)}
+                    </Select>
+                    <ChevronDown />
+                  </div>
                 </div>
 
                 {/* US Citizen */}
@@ -151,6 +170,50 @@ export default function ApplyPage() {
                         onClick={() => setCitizen(val)}
                         className={`flex-1 h-12 rounded-xl border text-[15px] font-semibold transition-all capitalize ${
                           citizen === val
+                            ? "border-gold bg-gold/10 text-gold"
+                            : "border-navy/15 bg-white text-navy/60 hover:border-navy/30"
+                        }`}
+                      >
+                        {val === "yes" ? "Yes" : "No"}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Work Permit - only show if not a US citizen */}
+                {citizen === "no" && (
+                  <div className="sm:col-span-2">
+                    <Label required>Are you legally permitted to work in the USA?</Label>
+                    <div className="flex gap-3 mt-1">
+                      {(["yes", "no"] as const).map((val) => (
+                        <button
+                          key={val}
+                          type="button"
+                          onClick={() => setWorkPermit(val)}
+                          className={`flex-1 h-12 rounded-xl border text-[15px] font-semibold transition-all capitalize ${
+                            workPermit === val
+                              ? "border-gold bg-gold/10 text-gold"
+                              : "border-navy/15 bg-white text-navy/60 hover:border-navy/30"
+                          }`}
+                        >
+                          {val === "yes" ? "Yes" : "No"}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Licensed */}
+                <div className="sm:col-span-2">
+                  <Label required>Are you licensed?</Label>
+                  <div className="flex gap-3 mt-1">
+                    {(["yes", "no"] as const).map((val) => (
+                      <button
+                        key={val}
+                        type="button"
+                        onClick={() => setLicensed(val)}
+                        className={`flex-1 h-12 rounded-xl border text-[15px] font-semibold transition-all capitalize ${
+                          licensed === val
                             ? "border-gold bg-gold/10 text-gold"
                             : "border-navy/15 bg-white text-navy/60 hover:border-navy/30"
                         }`}
@@ -180,31 +243,6 @@ export default function ApplyPage() {
                 <div className="sm:col-span-2">
                   <Label>Available Start Date</Label>
                   <Input type="text" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}" />
-                </div>
-              </div>
-            </div>
-
-            {/* Interview Preferences */}
-            <div className="bg-white/70 backdrop-blur-sm rounded-2xl border border-navy/10 p-7 md:p-8 shadow-[0_2px_16px_-8px_rgba(13,25,40,0.1)]">
-              <SectionHeading>Interview Preferences</SectionHeading>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="sm:col-span-2">
-                  <Label>Preferred Interview Date</Label>
-                  <Input type="text" placeholder="mm/dd/yyyy" pattern="\d{2}/\d{2}/\d{4}" />
-                </div>
-                <div>
-                  <Label>Preferred Time</Label>
-                  <Input type="text" placeholder="hh:mm AM/PM" />
-                </div>
-                <div>
-                  <Label>Timezone</Label>
-                  <div className="relative">
-                    <Select defaultValue="">
-                      <option value="" disabled>Select timezone</option>
-                      {TIMEZONES.map((tz) => <option key={tz}>{tz}</option>)}
-                    </Select>
-                    <ChevronDown />
-                  </div>
                 </div>
               </div>
             </div>

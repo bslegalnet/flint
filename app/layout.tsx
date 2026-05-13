@@ -31,11 +31,11 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Atlas Financial — Build Your Career with Atlas",
+  title: "Flint Financial Group — Build Your Career with Flint",
   description:
-    "Atlas Financial is a multi-carrier insurance agency built for ambitious agents. Top-tier contracts, real leads, AI-powered tools, mentorship, and a path to ownership.",
+    "Flint Financial Group is a multi-carrier insurance agency built for ambitious agents. Top-tier contracts, real leads, AI-powered tools, mentorship, and a path to ownership.",
   openGraph: {
-    title: "Atlas Financial — Build Your Career with Atlas",
+    title: "Flint Financial Group — Build Your Career with Flint",
     description:
       "Top-tier contracts. Real leads. AI-powered sales tools. Become the agent you always knew you could be.",
     type: "website",

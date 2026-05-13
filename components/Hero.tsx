@@ -50,7 +50,7 @@ export default function Hero() {
             <br />
             with{" "}
             <span className="relative inline-block text-gold">
-              Atlas
+              Flint Financial
               <span className="absolute left-0 -bottom-1.5 h-[2.5px] w-full rounded-full bg-gold" />
             </span>
           </motion.h1>
@@ -60,9 +60,9 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mt-6 text-[17px] md:text-[18px] text-navy/70 leading-[1.65] max-w-[500px]"
           >
-            Join a team that&apos;s redefining the insurance industry. We
-            invest in our agents and create real opportunities for income,
-            ownership, and freedom.
+            Join an agency designed for ambitious professionals. Our systems,
+            training, and support turn licensed agents into business owners with
+            real equity and unlimited potential.
           </motion.p>
 
           <motion.div
@@ -83,7 +83,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="mt-7 flex flex-wrap gap-x-7 gap-y-2.5"
           >
-            {["Competitive Commissions", "Free Training", "Built for Beginners & Licensed Agents"].map((item) => (
+            {["Top-Tier Contracts", "Comprehensive Training"].map((item) => (
               <li key={item} className="flex items-center gap-2 text-[13px] text-navy/65">
                 <span className="inline-flex items-center justify-center w-5 h-5 rounded-full border border-gold/40 text-gold">
                   <svg width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden>
@@ -105,11 +105,11 @@ export default function Hero() {
         >
           <div className="flex flex-col items-center leading-none">
             <span className="font-cinzel font-bold tracking-[0.18em] text-gold text-[56px] lg:text-[72px]">
-              ATLAS
+              FLINT
             </span>
             <span className="mt-4 flex items-center gap-4 font-cinzel font-medium tracking-[0.38em] text-gold text-[14px] lg:text-[16px]">
               <span className="h-px w-12 bg-gold/50" />
-              FINANCIAL
+              FINANCIAL GROUP
               <span className="h-px w-12 bg-gold/50" />
             </span>
           </div>

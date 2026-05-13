@@ -12,24 +12,18 @@ const stroke = "#C9A961";
 
 const FEATURES: Feature[] = [
   {
-    title: "Leads",
-    body: "A leads program for agents, by agents. Our leads program is designed with you in mind! Whether you're an experienced agent or just getting started, Quility LeadStream has a lead type and price to fit your needs.",
+    title: "Top Contracts",
+    body: "Flint makes available all of the top insurance carriers you need to do business. Maximize your earnings with industry-leading commission structures that put more money in your pocket on every sale.",
     icon: (
       <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden>
-        <circle cx="16" cy="14" r="6" stroke={stroke} strokeWidth="1.6" />
-        <path
-          d="M6 28C6 22.5 10.5 19 16 19C21.5 19 26 22.5 26 28"
-          stroke={stroke}
-          strokeWidth="1.6"
-          strokeLinecap="round"
-        />
-        <circle cx="24" cy="6" r="2.5" fill={stroke} />
+        <path d="M4 24L12 15L18 20L28 9" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M22 9h6v6" stroke={stroke} strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
   {
-    title: "Training + support",
-    body: "In-person events, webinars, digital courses to build your business. With so many products to manage and applications to leverage, we've developed comprehensive training and support, so you don't miss a beat on your path to success.",
+    title: "Expert-Led Training",
+    body: "Comprehensive training program featuring live workshops, digital courses, and one-on-one coaching sessions. Our experienced leadership team provides ongoing support across product knowledge, sales methodology, and business development. Regular training events nationwide.",
     icon: (
       <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden>
         <circle cx="11" cy="12" r="4" stroke={stroke} strokeWidth="1.6" />
@@ -50,8 +44,8 @@ const FEATURES: Feature[] = [
     ),
   },
   {
-    title: "Carriers + products",
-    body: "A wide range of products through partnerships with top-tier carriers. On top of a product portfolio spanning 80+ carriers, Symmetry agents have access to Quility's proprietary products. These proprietary products let you find the most customizable product for your client.",
+    title: "100+ Carrier Partnerships",
+    body: "Access to an extensive product portfolio through partnerships with the nation's top-rated insurance carriers. Our carrier relationships ensure competitive pricing and streamlined underwriting. Proprietary products available exclusively through Flint Financial Group.",
     icon: (
       <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden>
         <path
@@ -71,8 +65,8 @@ const FEATURES: Feature[] = [
     ),
   },
   {
-    title: "Tech platform",
-    body: "Powerful tools throughout your workflow with applications and services to make your life easier and your workflow more efficient. From agency management to finding the best-fit policy for your clients, we have a solution for every part of the agent journey.",
+    title: "Enterprise Technology",
+    body: "State-of-the-art technology platform streamlining every aspect of your workflow. From CRM and agency management to quoting engines and e-application systems, our integrated tech stack maximizes efficiency and accelerates your sales cycle.",
     icon: (
       <svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden>
         <rect
@@ -99,7 +93,7 @@ const FEATURES: Feature[] = [
   },
 ];
 
-export default function WhyAtlas() {
+export default function WhyFlint() {
   return (
     <section id="why" className="section bg-navy text-cream relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gold-radial opacity-60" />
@@ -112,7 +106,7 @@ export default function WhyAtlas() {
           transition={{ duration: 0.5 }}
           className="eyebrow"
         >
-          The Atlas Advantage
+          The Flint Advantage
         </motion.p>
 
         <motion.h2
@@ -122,7 +116,7 @@ export default function WhyAtlas() {
           transition={{ duration: 0.7 }}
           className="mt-4 font-sans font-bold text-gold text-[34px] md:text-[56px] leading-[1.02] tracking-[-0.01em] max-w-2xl"
         >
-          Why Agents Choose Atlas
+          Why Agents Choose Flint Financial Group
         </motion.h2>
 
         <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">

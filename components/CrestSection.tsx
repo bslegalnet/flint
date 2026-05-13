@@ -18,11 +18,11 @@ export default function CrestSection() {
         >
           <div className="flex flex-col items-center leading-none">
             <span className="font-cinzel font-bold tracking-[0.18em] text-gold text-[40px] md:text-[56px]">
-              ATLAS
+              FLINT
             </span>
             <span className="mt-3 flex items-center gap-3 font-cinzel font-medium tracking-[0.4em] text-gold text-[12px] md:text-[14px]">
               <span className="h-px w-8 bg-gold/60" />
-              FINANCIAL
+              FINANCIAL GROUP
               <span className="h-px w-8 bg-gold/60" />
             </span>
           </div>

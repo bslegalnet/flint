@@ -14,28 +14,28 @@ type Testimonial = {
 const TESTIMONIALS: Testimonial[] = [
   {
     quote:
-      "The contracts and infrastructure Atlas provides are unlike anything I've seen at other agencies. I have full ownership of my book and real support behind me.",
+      "The contracts and infrastructure Flint Financial Group provides are unlike anything I've seen at other agencies. I have full ownership of my book and real support from the team.",
     name: "Marcus T.",
     role: "Field Agent",
-    since: "Member since 2024",
+    since: "Partner since 2024",
     monthly: "$24K/mo",
     initial: "M",
   },
   {
     quote:
-      "I came in without a license and Atlas walked me through everything. Three weeks later I was writing deals. This is a real team, not a funnel.",
+      "I came in without a license and the Flint team walked me through everything. Three weeks later I was writing deals. The training program and support system are exceptional.",
     name: "Jasmine R.",
     role: "Licensed Agent",
-    since: "Member since 2025",
+    since: "Partner since 2025",
     monthly: "$11K/mo",
     initial: "J",
   },
   {
     quote:
-      "Leaving my old agency was the best decision I made. The overrides here are legitimate and my downline now outproduces anything I could have built alone.",
+      "Leaving my old agency was the best decision I made. The overrides here are legitimate and my downline now outproduces anything I could have built elsewhere. The Atlas Crest methodology works.",
     name: "Devin O.",
     role: "Agency Builder",
-    since: "Member since 2023",
+    since: "Partner since 2023",
     monthly: "$58K/mo",
     initial: "D",
   },
@@ -46,12 +46,12 @@ export default function Testimonials() {
     <section className="section bg-cream">
       <div className="container-tight">
         <div className="text-center max-w-2xl mx-auto">
-          <p className="eyebrow">Our Agents</p>
+          <p className="eyebrow">Client Success Stories</p>
           <h2 className="mt-4 font-sans font-bold text-navy text-[34px] md:text-[48px] leading-[1.05] tracking-[-0.01em]">
-            Hear From the Team
+            Agent Success Stories
           </h2>
           <p className="mt-3 text-navy/60 text-[16px] leading-relaxed">
-            Real agents. Real results. No exaggeration.
+            Real agents. Real results. Verified performance.
           </p>
         </div>
 

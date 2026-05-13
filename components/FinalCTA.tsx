@@ -18,7 +18,7 @@ export default function FinalCTA() {
           transition={{ duration: 0.7 }}
           className="font-sans font-bold text-gold text-[36px] md:text-[64px] leading-[1.0] tracking-[-0.01em]"
         >
-          Your Atlas Career Starts Here
+          Your Flint Career Starts Here
         </motion.h2>
 
         <motion.p
@@ -28,8 +28,9 @@ export default function FinalCTA() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="mt-6 text-cream/80 text-lg leading-relaxed"
         >
-          Spots are limited. We onboard a small number of agents each month to
-          ensure every one gets the support they deserve.
+          Spots are limited. Our team onboards a select number of agents each
+          month to ensure everyone receives the dedicated support and training
+          they deserve.
         </motion.p>
 
         <motion.div
@@ -47,7 +48,7 @@ export default function FinalCTA() {
             <span aria-hidden className="ml-2">→</span>
           </a>
           <p className="mt-4 text-sm text-cream/60">
-            Takes 2 minutes. We&apos;ll respond within 24 hours.
+            Takes 2 minutes. Our team responds within 24 hours.
           </p>
         </motion.div>
       </div>

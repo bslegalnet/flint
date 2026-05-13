@@ -2,9 +2,9 @@ import Logo from "./Logo";
 
 const COL_COMPANY = [
   { label: "About", href: "#about" },
-  { label: "Why Atlas", href: "#why" },
+  { label: "Why Flint", href: "#why" },
   { label: "Careers", href: "#apply" },
-  { label: "Contact", href: "mailto:hello@atlasfinancial.com" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const COL_AGENTS = [
@@ -81,9 +81,9 @@ export default function Footer() {
 
         <div className="mt-14 pt-8 border-t border-cream/10">
           <p className="text-xs text-cream/50 leading-relaxed max-w-2xl">
-            Atlas Financial is an insurance marketing organization. Licensed
+            Flint Financial Group is an insurance marketing organization. Licensed
             agents are independent contractors. Income examples are not
-            guarantees. © 2026 Atlas Financial.
+            guarantees. © 2026 Flint Financial Group.
           </p>
         </div>
       </div>

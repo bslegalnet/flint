@@ -74,41 +74,31 @@ export default function Qualification() {
   return (
     <section className="section bg-cream-warm">
       <div className="container-tight">
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="eyebrow">For Whom</p>
-          <h2 className="mt-4 font-sans font-bold text-navy text-[34px] md:text-[56px] leading-[1.02] tracking-[-0.01em]">
-            Is Atlas Right for You?
-          </h2>
-          <p className="mt-5 text-charcoal/75 text-lg leading-relaxed">
-            Two paths in. Same destination — a career you actually own.
-          </p>
-        </div>
-
-        <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card
             eyebrow="Licensed 2-15 Agents"
-            title="Tired of average contracts?"
+            title="Ready for elite contracts?"
             borderClass="border-gold"
             accentClass="text-gold"
             bullets={[
               "You hold an active state life insurance license",
-              "You've sold (or tried to sell) and want better support",
-              "You want to build a downline of your own",
+              "You're seeking superior commission structures and support",
+              "You want to build and lead your own agency team",
             ]}
-            cta="Get Your Atlas Contract"
+            cta="Request Contract Information"
           />
           <Card
             eyebrow="Aspiring Agents"
-            title="Ready to start something real?"
+            title="Ready to launch your career?"
             borderClass="border-navy"
             accentClass="text-navy"
-            badge="FREE TRAINING"
+            badge="LICENSING SUPPORT"
             bullets={[
-              "You're driven, coachable, and tired of dead-end work",
-              "You want a real career, not a side hustle",
-              "You're willing to invest time to get licensed",
+              "You're driven, coachable, and ready for a real career",
+              "You want professional development and income potential",
+              "Willing to obtain required state licensing",
             ]}
-            cta="Start Your Licensing Journey"
+            cta="Start Your Application"
           />
         </div>
       </div>

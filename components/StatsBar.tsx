@@ -3,16 +3,16 @@
 import { motion } from "framer-motion";
 
 const STATS = [
-  { value: "5+", label: "Years of Excellence" },
-  { value: "$4M+", label: "Profit Made" },
+  { value: "500+", label: "Agents Nationwide" },
+  { value: "15+", label: "Licensed Professionals" },
   { value: "1M+", label: "Families Protected" },
 ];
 
 export default function StatsBar() {
   return (
-    <section className="px-6 pb-6 pt-12 md:pt-16">
+    <section id="stats" className="px-6 pb-6 pt-12 md:pt-16">
       <div className="container-tight">
-        {/* ATLAS FINANCIAL Logo */}
+        {/* FLINT FINANCIAL GROUP Logo */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -22,11 +22,11 @@ export default function StatsBar() {
         >
           <div className="flex flex-col items-center leading-none mt-2">
             <span className="font-cinzel font-bold tracking-[0.18em] text-gold text-[36px]">
-              ATLAS
+              FLINT
             </span>
             <span className="mt-2.5 flex items-center gap-3 font-cinzel font-medium tracking-[0.38em] text-gold text-[11px]">
               <span className="h-px w-8 bg-gold/50" />
-              FINANCIAL
+              FINANCIAL GROUP
               <span className="h-px w-8 bg-gold/50" />
             </span>
           </div>

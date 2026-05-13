@@ -22,7 +22,7 @@ export default function AtlasCrest({
       width={size}
       height={(size * 260) / 220}
       role="img"
-      aria-label="Atlas Financial crest"
+      aria-label="Flint Financial Group crest"
       className={className}
     >
       {/* Crown */}

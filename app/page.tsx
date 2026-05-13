@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -6,7 +7,8 @@ import Hero from "@/components/Hero";
 import Qualification from "@/components/Qualification";
 import StatsBar from "@/components/StatsBar";
 import StickyApply from "@/components/StickyApply";
-import WhyAtlas from "@/components/WhyAtlas";
+import SupportWidget from "@/components/SupportWidget";
+import WhyFlint from "@/components/WhyAtlas";
 
 export default function Page() {
   return (
@@ -15,11 +17,13 @@ export default function Page() {
       <Hero />
       <StatsBar />
       <About />
-      <WhyAtlas />
+      <WhyFlint />
       <Qualification />
+      <FAQ />
       <FinalCTA />
       <Footer />
       <StickyApply />
+      <SupportWidget />
     </main>
   );
 }
