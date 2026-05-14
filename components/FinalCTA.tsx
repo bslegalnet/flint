@@ -48,7 +48,7 @@ export default function FinalCTA() {
             <span aria-hidden className="ml-2">→</span>
           </a>
           <p className="mt-4 text-sm text-cream/60">
-            Takes 2 minutes. Our team responds within 24 hours.
+            Takes 30 seconds. Our team responds within 24 hours.
           </p>
         </motion.div>
       </div>

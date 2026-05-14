@@ -8,8 +8,8 @@ const COL_COMPANY = [
 ];
 
 const COL_AGENTS = [
-  { label: "Apply Now", href: "#apply" },
-  { label: "Get Licensed", href: "#apply" },
+  { label: "Apply Now", href: "/apply" },
+  { label: "Get Licensed", href: "/apply" },
   { label: "Agent Resources", href: "#" },
   { label: "FAQ", href: "#" },
 ];

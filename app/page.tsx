@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Qualification from "@/components/Qualification";
 import StatsBar from "@/components/StatsBar";
-import StickyApply from "@/components/StickyApply";
 import SupportWidget from "@/components/SupportWidget";
 import WhyFlint from "@/components/WhyAtlas";
 
@@ -22,8 +21,7 @@ export default function Page() {
       <FAQ />
       <FinalCTA />
       <Footer />
-      <StickyApply />
-      <SupportWidget />
+<SupportWidget />
     </main>
   );
 }

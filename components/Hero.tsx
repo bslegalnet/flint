@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-24 md:pt-0 md:min-h-screen"
+      className="relative overflow-hidden pt-20 md:pt-0 md:min-h-screen"
       style={{
         background:
           "radial-gradient(ellipse at 15% 40%, #EFE4C4 0%, #F5EDD8 35%, #FDFAF5 75%)",
@@ -44,7 +44,7 @@ export default function Hero() {
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.6 }}
-            className="mt-6 font-sans font-bold text-navy leading-[1.06] tracking-[-0.01em] text-[40px] sm:text-[52px] md:text-[56px] lg:text-[64px]"
+            className="mt-4 font-sans font-bold text-navy leading-[1.06] tracking-[-0.01em] text-[40px] sm:text-[52px] md:text-[56px] lg:text-[64px]"
           >
             Build Your Career
             <br />

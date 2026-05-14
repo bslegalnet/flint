@@ -24,7 +24,7 @@ function Card({ eyebrow, title, bullets, cta, borderClass, accentClass, badge }:
       <div className="flex items-center gap-2.5">
         <span className={`eyebrow ${accentClass}`}>{eyebrow}</span>
         {badge && (
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-[11px] font-semibold text-gold tracking-wide">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-gold/15 border border-gold/30 px-3 py-1 text-[11px] font-semibold text-gold tracking-wide whitespace-nowrap">
             <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden>
               <path
                 d="M2 6.5L4.8 9L10 3.5"
@@ -61,7 +61,7 @@ function Card({ eyebrow, title, bullets, cta, borderClass, accentClass, badge }:
       </ul>
       <a
         href="/apply"
-        className="btn-gold h-12 px-6 text-sm mt-8 self-start"
+        className="btn-gold h-12 px-6 text-sm mt-8 w-full justify-center"
       >
         {cta}
         <span aria-hidden className="ml-2">→</span>
@@ -85,7 +85,7 @@ export default function Qualification() {
               "You're seeking superior commission structures and support",
               "You want to build and lead your own agency team",
             ]}
-            cta="Request Contract Information"
+            cta="Start Your Application"
           />
           <Card
             eyebrow="Aspiring Agents"
