@@ -49,9 +49,8 @@ export default function Hero() {
             Build Your Career
             <br />
             with{" "}
-            <span className="relative inline-block text-gold">
-              Flint Financial
-              <span className="absolute left-0 -bottom-1.5 h-[2.5px] w-full rounded-full bg-gold" />
+            <span className="font-cinzel tracking-[0.06em] text-gold">
+              Flint
             </span>
           </motion.h1>
 
@@ -96,22 +95,20 @@ export default function Hero() {
           </motion.ul>
         </motion.div>
 
-        {/* Right — logo text */}
+        {/* Right — Flint stage photo */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
-          className="flex-1 hidden md:flex flex-col items-center justify-center"
+          className="flex-1 hidden md:flex items-center justify-center"
         >
-          <div className="flex flex-col items-center leading-none">
-            <span className="font-cinzel font-bold tracking-[0.18em] text-gold text-[56px] lg:text-[72px]">
-              FLINT
-            </span>
-            <span className="mt-4 flex items-center gap-4 font-cinzel font-medium tracking-[0.38em] text-gold text-[14px] lg:text-[16px]">
-              <span className="h-px w-12 bg-gold/50" />
-              FINANCIAL GROUP
-              <span className="h-px w-12 bg-gold/50" />
-            </span>
+          <div className="relative w-full max-w-[640px] aspect-[16/11] rounded-2xl overflow-hidden shadow-[0_25px_60px_-20px_rgba(28,18,8,0.35)] ring-1 ring-navy/10">
+            <img
+              src="/flint-stage.webp"
+              alt="Flint Financial Group agents on stage at the company event"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
           </div>
         </motion.div>
 

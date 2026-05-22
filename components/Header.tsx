@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import { openAgentPortal } from "./AgentPortal";
 
 const NAV = [
   { label: "About", href: "#about" },
@@ -40,6 +41,12 @@ export default function Header() {
               {n.label}
             </a>
           ))}
+          <button
+            onClick={openAgentPortal}
+            className="text-sm font-medium text-navy/80 hover:text-navy transition-colors"
+          >
+            Agent Login
+          </button>
           <a
             href="/apply"
             className="btn-gold px-5 py-2.5 text-sm"
@@ -89,6 +96,15 @@ export default function Header() {
               {n.label}
             </a>
           ))}
+          <button
+            onClick={() => {
+              setOpen(false);
+              openAgentPortal();
+            }}
+            className="text-base font-medium text-navy py-2 border-b border-navy/10 text-left"
+          >
+            Agent Login
+          </button>
           <a
             href="/apply"
             onClick={() => setOpen(false)}

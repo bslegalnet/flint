@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Inter, Playfair_Display, Sora } from "next/font/google";
+import AgentPortal from "@/components/AgentPortal";
 import "./globals.css";
 
 const inter = Inter({
@@ -52,7 +53,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} ${cinzel.variable} ${sora.variable}`}
     >
-      <body className="font-sans bg-cream text-charcoal">{children}</body>
+      <body className="font-sans bg-cream text-charcoal">
+        {children}
+        <AgentPortal />
+      </body>
     </html>
   );
 }

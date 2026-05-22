@@ -21,7 +21,7 @@ export default function Page() {
       <FAQ />
       <FinalCTA />
       <Footer />
-<SupportWidget />
+      <SupportWidget />
     </main>
   );
 }
