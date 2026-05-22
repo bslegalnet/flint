@@ -17,7 +17,7 @@ export default function Hero() {
           "radial-gradient(ellipse at 15% 40%, #EFE4C4 0%, #F5EDD8 35%, #FDFAF5 75%)",
       }}
     >
-      <div className="container-tight flex flex-col md:flex-row md:items-center md:min-h-screen px-6 gap-12 md:gap-8 py-16 md:py-0">
+      <div className="container-tight flex flex-col md:flex-row md:items-center md:min-h-screen px-6 gap-12 md:gap-8 pt-4 pb-12 md:py-0">
 
         {/* Left — text content */}
         <motion.div
@@ -26,25 +26,49 @@ export default function Hero() {
           transition={{ staggerChildren: 0.08 }}
           className="flex-1 max-w-[580px]"
         >
+          {/* Trust badges */}
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2.5 rounded-full border border-navy/20 bg-cream/60 px-4 py-2"
+            className="flex flex-nowrap justify-center md:justify-start gap-2"
           >
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden className="text-gold">
-              <circle cx="7" cy="5" r="2.5" stroke="currentColor" strokeWidth="1.4" />
-              <path d="M2 13C2 10.2 4.2 8.5 7 8.5C9.8 8.5 12 10.2 12 13" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-              <path d="M10.5 2.5L11.5 1.5M11.5 2.5L10.5 1.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-            </svg>
-            <span className="text-[12px] font-semibold text-navy/80 tracking-wide">
-              Now Hiring
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-navy/20 bg-cream/60 px-3 py-1.5 whitespace-nowrap">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden className="text-gold shrink-0">
+                <circle cx="7" cy="7" r="5.5" stroke="currentColor" strokeWidth="1.3" />
+                <path d="M1.5 7H12.5M7 1.5C8.6 3.4 8.6 10.6 7 12.5M7 1.5C5.4 3.4 5.4 10.6 7 12.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+              </svg>
+              <span className="text-[11px] sm:text-[12px] font-semibold text-navy/80 tracking-wide">
+                500+ Agents Worldwide
+              </span>
             </span>
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-navy/20 bg-cream/60 px-3 py-1.5 whitespace-nowrap">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden className="text-gold shrink-0">
+                <path d="M7 1.5V12.5M9.5 4H6C5.2 4 4.5 4.6 4.5 5.4C4.5 6.2 5.2 6.8 6 6.8H8C8.8 6.8 9.5 7.4 9.5 8.2C9.5 9 8.8 9.6 8 9.6H4.5" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+              <span className="text-[11px] sm:text-[12px] font-semibold text-navy/80 tracking-wide">
+                $1M+ Paid to Agents
+              </span>
+            </span>
+          </motion.div>
+
+          {/* Mobile-only hero image (above the title) */}
+          <motion.div
+            variants={fadeUp}
+            transition={{ duration: 0.6 }}
+            className="md:hidden mt-6 relative w-full aspect-[16/11] rounded-2xl overflow-hidden shadow-[0_20px_50px_-20px_rgba(28,18,8,0.35)] ring-1 ring-navy/10"
+          >
+            <img
+              src="/flint-stage.webp"
+              alt="Flint Financial Group agents on stage at the company event"
+              className="absolute inset-0 w-full h-full object-cover"
+              loading="eager"
+            />
           </motion.div>
 
           <motion.h1
             variants={fadeUp}
             transition={{ duration: 0.6 }}
-            className="mt-4 font-sans font-bold text-navy leading-[1.06] tracking-[-0.01em] text-[40px] sm:text-[52px] md:text-[56px] lg:text-[64px]"
+            className="mt-6 md:mt-4 font-sans font-bold text-navy leading-[1.06] tracking-[-0.01em] text-[40px] sm:text-[52px] md:text-[56px] lg:text-[64px]"
           >
             Build Your Career
             <br />
@@ -95,7 +119,7 @@ export default function Hero() {
           </motion.ul>
         </motion.div>
 
-        {/* Right — Flint stage photo */}
+        {/* Right — Flint stage photo (desktop only; mobile shows it inline above the title) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
